@@ -1,0 +1,67 @@
+sudo apt update
+apt 모듈 업데이트
+
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+필요 패키지 설치
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+웹요청 도구를 이용해 도커 및 키  추가
+
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+도커 관련 레포지토리 설치
+
+sudo apt update
+패키지 업데이트
+
+apt-cache policy docker-ce
+docker-ce 확인
+
+sudo apt install docker-ce
+도커 설치
+
+sudo systemctl status docker
+도커 러닝중인지 확인
+---------------------------------------
+
+도커이미지 다운로드
+
+ex) 예시
+sudo docker pull centos
+도커허브에서 centos 가져옴
+
+sudo docker create -t -i --name centos centos
+컨테이너 생성
+
+sudo docker start centos 
+sudo docker stop centos
+컨테이너 실행
+컨테이너 중지
+
+sudo docker attach centos
+컨테이너 접속
+
+sudo docker ps -a
+컨테이서 상태 확인
+
+sudo docker rm centos
+컨테이너 삭제
+
+--------------------------------
+DB컨테이너 생성
+
+sudo docker pull postgres
+도커허브에서 DB 이미지 당겨옴
+
+docker run -p 5432:5432 --name postgres -e POSTGRES_PASSWORD=1q2w3e4r -d postgres
+이미지로 옵션주며 컨테이너 생성
+
+docker exec -it postgres /bin/bash
+컨테이너 실행
+
+실행 후 터미널에서->
+psql -U postgres
+
+
+
+
+
