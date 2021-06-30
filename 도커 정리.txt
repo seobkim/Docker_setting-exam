@@ -30,20 +30,26 @@ sudo docker pull centos
 도커허브에서 centos 가져옴
 
 sudo docker create -t -i --name centos centos
+sudo docker create -t -i --name [컨테이너 명시 이름] [이미지이름]
 컨테이너 생성
 
 sudo docker start centos 
-sudo docker stop centos
+sudo docker start [컨테이너 명시 이름,컨테이너ID]
 컨테이너 실행
+
+sudo docker stop centos
+sudo docker stop 
 컨테이너 중지
 
 sudo docker attach centos
+sudo docker attach [컨테이너 명시 이름,컨테이너ID]
 컨테이너 접속
 
 sudo docker ps -a
 컨테이서 상태 확인
 
 sudo docker rm centos
+sudo docker rm [컨테이너 명시 이름,컨테이너ID]
 컨테이너 삭제
 
 --------------------------------
