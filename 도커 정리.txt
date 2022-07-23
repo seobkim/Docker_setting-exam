@@ -28,7 +28,22 @@ sudo systemctl status docker
 ex) 예시
 sudo docker pull centos
 도커허브에서 centos 가져옴
+------------------------------------------
 
+docker-compose 로 한방에 관리.
+
+
+정리할것!
+
+
+docker-compose.yami 설정 방법  
+정리할것
+
+
+
+
+
+-------------------------------------------
 sudo docker create -t -i --name centos centos
 sudo docker create -t -i --name [컨테이너 명시 이름] [이미지이름]
 컨테이너 생성
