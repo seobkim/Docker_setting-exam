@@ -32,11 +32,15 @@ sudo docker pull centos
 
 docker-compose 로 한방에 관리.
 
+apt-get install docer-compose
+도커-컴포즈 설치
+
+
 
 정리할것!
 
 
-docker-compose.yami 설정 방법  
+docker-compose.yml 설정 방법  
 정리할것
 
 
