@@ -22,37 +22,36 @@ sudo apt install docker-ce
 sudo systemctl status docker
 도커 러닝중인지 확인
 ---------------------------------------
+- 도커 이미지 검색
+docker search [검색할 이미지]
 
-도커이미지 다운로드
-
-ex) 예시
+- 도커이미지 다운로드
 sudo docker pull centos
-도커허브에서 centos 가져옴
+
+- 도커 이미지 리스트 확인
+docker images
+
+- 도커 이미지 삭제
+docker rmi [이미지 명]
+
 ------------------------------------------
 
-docker-compose 로 한방에 관리.
+docker-compose로 여러 컨테이너를 한번에 관리.
 
 apt-get install docer-compose
 도커-컴포즈 설치
 
 
-
-정리할것!
-
-
 docker-compose.yml 설정 파일 확인 및 작성
-
 -> .yml 파일 위치에서 아래 명령어 수행
 
-docker-compose up
+docker-compose up  <=> docker-compose down
 여러개의 이미지 컨테이너를 docker-compose.yml 설정 파일대로 실행
 
 docker exec -it [컨테이너 네임] or [컨테이너 ID]
 
 docker 실행 명령어
 attach와 exec 차이
-
-
 
 
 
